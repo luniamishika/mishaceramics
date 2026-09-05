@@ -68,12 +68,12 @@ def work_page(title: str, filename: str, alt: str) -> str:
 <body class="content work">
   <div class="site">
     <aside class="mobile-bar">
-      <a href="../index.html" class="logo">MISHA<br />LUNIA</a>
+      <a href="../index.html" class="logo">MISHA<span class="logo-break"></span>LUNIA</a>
       <button class="hamburger" aria-label="Menu"><span></span></button>
     </aside>
     <button type="button" class="cart-btn" aria-label="Cart">{CART_SVG}</button>
     <header class="nav-wrapper">
-      <a href="../index.html" class="logo">MISHA<br />LUNIA</a>
+      <a href="../index.html" class="logo">MISHA<span class="logo-break"></span>LUNIA</a>
       <nav id="menu">
         <ul>
         <li class="item selected"><a href="../index.html">art gallery</a></li>
@@ -90,15 +90,22 @@ def work_page(title: str, filename: str, alt: str) -> str:
     <main id="content">
       <a class="back-link" href="../index.html">← art gallery</a>
       <article class="work-page">
-        <img src="../images/gallery/{f}" alt="{a}" />
-        <h1>{t}</h1>
-        <div class="work-copy">
-          <p></p>
+        <div class="work-layout">
+          <img class="work-hero" src="../images/gallery/{f}" alt="{a}" />
+          <div class="work-info">
+            <h1>{t}</h1>
+            <div class="work-copy">
+              <p></p>
+            </div>
+          </div>
         </div>
-        <div class="work-more">
+        <div class="work-process">
+          <h2>Process Images</h2>
+          <div class="work-more">
           <span class="black" style="aspect-ratio: 1 / 1"></span>
           <span class="black" style="aspect-ratio: 1 / 1"></span>
           <span class="black" style="aspect-ratio: 1 / 1"></span>
+          </div>
         </div>
       </article>
     </main>

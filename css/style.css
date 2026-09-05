@@ -65,7 +65,7 @@ a:hover {
 .logo {
   font-family: var(--font-heading);
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--logo);
   letter-spacing: -0.5px;
   display: block;
@@ -76,6 +76,10 @@ a:hover {
 
 .logo:hover {
   color: var(--logo);
+}
+
+.logo-break {
+  display: block;
 }
 
 h1,
@@ -269,18 +273,27 @@ body.gallery #content {
 }
 
 .work-page {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 28px 16px 60px;
-  text-align: center;
+  max-width: 960px;
+  margin: 0;
+  padding: 28px 2% 60px 0;
+  text-align: left;
 }
 
-.work-page img {
-  width: 72%;
+.work-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 28px 32px;
+  align-items: start;
+  margin-bottom: 28px;
+}
+
+.work-page .work-hero {
+  width: 100%;
   max-width: 520px;
-  margin: 0 auto 20px;
+  margin: 0;
 }
 
+.work-info h1,
 .work-page h1 {
   font-size: 22px;
   font-weight: 400;
@@ -289,14 +302,23 @@ body.gallery #content {
 }
 
 .work-page .work-copy {
-  max-width: 520px;
-  margin: 0 auto 32px;
+  max-width: none;
+  margin: 0;
 }
 
-.work-page .work-more {
-  width: 72%;
-  max-width: 520px;
-  margin: 0 auto;
+.work-process {
+  margin-top: 8px;
+}
+
+.work-process h2 {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 400;
+  color: #111;
+  margin: 0 0 14px;
+  display: inline-block;
+  border-bottom: 1px solid #111;
+  padding-bottom: 2px;
 }
 
 .work-page .work-more img {
@@ -316,13 +338,8 @@ body.work .back-link {
 
 .work-more {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.work-page .work-more:has(> img:only-child) {
-  grid-template-columns: minmax(140px, 34%);
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 180px));
+  gap: 12px;
 }
 
 .cart-btn {
@@ -613,6 +630,7 @@ html.lightbox-active body {
 .about-hero img {
   width: 100%;
   max-width: 420px;
+  border: 1px solid rgba(68, 68, 68, 0.22);
 }
 
 .cv h3,
@@ -855,6 +873,15 @@ body.product .back-link {
     font-size: 18px;
     margin: 0;
     padding-right: 8px;
+    white-space: nowrap;
+  }
+
+  .mobile-bar .logo-break {
+    display: inline;
+  }
+
+  .mobile-bar .logo-break::before {
+    content: " ";
   }
 
   .mobile-bar .hamburger {
@@ -899,13 +926,13 @@ body.product .back-link {
     grid-template-columns: 1fr 1fr;
   }
 
-  .work-page .work-more:has(> img:only-child) {
-    grid-template-columns: minmax(140px, 40%);
+  .work-layout {
+    grid-template-columns: 1fr;
   }
 
   .work-page img,
   .work-page .work-more {
-    width: 86%;
+    width: 100%;
   }
 
   .collection-tabs a {
