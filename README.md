@@ -56,4 +56,4 @@ The name is stacked: MISHA / LUNIA.
 
 Default weight is 400. About CV years use 600. Line height for body copy is 1.5. The name uses letter-spacing -0.5px and line-height 1.05.
 
-Page background is `#fffff8`. Link hover is `#ffcd70`.
+Page background is `#fffff8`. Link hover is `#a07834`.
