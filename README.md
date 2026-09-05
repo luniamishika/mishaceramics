@@ -57,4 +57,4 @@ The name is stacked on desktop (MISHA / LUNIA) and one line on mobile.
 
 Default weight is 400. About CV years use 600. Line height for body copy is 1.5.
 
-Page background is `#fffff8`. Link hover is `#6f3f35`.
+Page background is `#fffff8`. Link hover is `#b5522a`.
