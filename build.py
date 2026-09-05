@@ -216,13 +216,13 @@ def main() -> None:
     about_body = f"""      <div class="about-hero">
         <div>
           <h2>Misha Lunia</h2>
-          <p>Artist and ceramicist based in Indore, India. Clay is at the centre of her work: functional ware and sculpture. She has been working with ceramics since 2025. She has a working knowledge of the wheel, hand building and glaze chemistry.</p>
+          <p>Artist and ceramicist based in Indore, India. Clay is at the centre of her work: functional ware. She has been working with ceramics since 2025. She has a working knowledge of the wheel, hand building and glaze chemistry.</p>
           <p>She picked clay because it is physical. She likes to touch it — it grounds her and reconnects her with herself and the earth. She works in stoneware and earthenware from Bhoomi Pottery.</p>
           <p>She works from her home studio. When she is uninspired, she goes to Studio Folklore, where it all started.</p>
           <p>She is also an academic and engineer, trying to find her place between science and tech.</p>
           <p>Reach me at <a href="mailto:mishikalunia@gmail.com">mishikalunia[at]gmail[dot]com</a></p>
         </div>
-        <img src="images/about/portrait.png" alt="Misha Lunia" />
+        <img src="images/about/portrait.jpg" alt="Misha Lunia" />
       </div>
       <div class="cv">
         <p class="cv-rule">...</p>
