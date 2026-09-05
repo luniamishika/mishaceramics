@@ -320,6 +320,11 @@ body.work .back-link {
   gap: 16px;
 }
 
+.work-page .work-more:has(> img:only-child) {
+  grid-template-columns: minmax(140px, 34%);
+  justify-content: center;
+}
+
 .cart-btn {
   position: fixed;
   top: 18px;
@@ -892,6 +897,10 @@ body.product .back-link {
 
   .work-more {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .work-page .work-more:has(> img:only-child) {
+    grid-template-columns: minmax(140px, 40%);
   }
 
   .work-page img,
