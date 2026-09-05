@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap");
 
 :root {
-  --hover: #6b2a32;
+  --hover: #ffcd70;
   --muted: #6a6a6a;
   --text: #444;
   --logo: #0e0e0e;
   --icon: #c6c6c6;
   --sidebar: 250px;
-  --bg: #fbfaf8;
+  --bg: #fffff8;
+  --font-body: "Zen Kaku Gothic New", "Avenir Next", Avenir, Helvetica, Arial, sans-serif;
+  --font-heading: "Zen Kaku Gothic Antique", "Avenir Next", Avenir, Helvetica, Arial, sans-serif;
 }
 
 *,
@@ -22,7 +24,7 @@ html,
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: "Source Sans 3", "Avenir Next", Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   line-height: 1.5;
   min-height: 100%;
@@ -61,19 +63,28 @@ a:hover {
 }
 
 .logo {
-  font-family: Cousine, "Courier New", monospace;
+  font-family: var(--font-heading);
   font-size: 30px;
   font-weight: 400;
   color: var(--logo);
   letter-spacing: -0.5px;
   display: block;
   margin-bottom: 32px;
-  line-height: 1.15;
+  line-height: 1.05;
   text-decoration: none;
 }
 
 .logo:hover {
   color: var(--logo);
+}
+
+h1,
+h2,
+h3,
+.page-heading,
+.product-card .name,
+.piece-info h2 {
+  font-family: var(--font-heading);
 }
 
 #menu {
@@ -158,9 +169,20 @@ a:hover {
   min-height: 100vh;
 }
 
-.store #content,
+.store #content {
+  padding-top: 64px;
+}
+
+body.content:not(.work) #content {
+  padding-top: 80px;
+}
+
 body.work #content {
   padding-top: 36px;
+}
+
+body.gallery #content {
+  padding-top: 72px;
 }
 
 .masonry {
@@ -627,7 +649,7 @@ html.lightbox-active body {
 }
 
 .collection-tabs a {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: var(--font-heading);
   font-size: 22px;
   color: #444;
   padding: 8px 12px;
@@ -646,11 +668,11 @@ html.lightbox-active body {
 }
 
 .page-heading {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 400;
   color: #2c2c2c;
   text-align: center;
-  padding: 0 2% 16px;
+  padding: 0 2% 32px;
   margin: 0;
   line-height: 1.2;
   text-transform: none;

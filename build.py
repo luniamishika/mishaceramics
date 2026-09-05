@@ -49,7 +49,7 @@ def sidebar(active: str, prefix: str = "") -> str:
         items.append(f'        <li class="item{sel}"><a href="{prefix}{href}">{label}</a></li>')
     nav = "\n".join(items)
     return f"""    <header class="nav-wrapper">
-      <a href="{prefix}index.html" class="logo">MISHA LUNIA</a>
+      <a href="{prefix}index.html" class="logo">MISHA<br />LUNIA</a>
       <nav id="menu">
         <ul>
 {nav}
@@ -78,7 +78,7 @@ def page(title: str, active: str, body: str, extra_head: str = "", prefix: str =
 <body class="{body_class}">
   <div class="site">
     <aside class="mobile-bar">
-      <a href="{prefix}index.html" class="logo">MISHA LUNIA</a>
+      <a href="{prefix}index.html" class="logo">MISHA<br />LUNIA</a>
       <button class="hamburger" aria-label="Menu"><span></span></button>
     </aside>
     <button type="button" class="cart-btn" aria-label="Cart">

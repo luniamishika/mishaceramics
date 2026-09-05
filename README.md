@@ -32,12 +32,14 @@ That adds it to the art gallery and creates `work/bowl.html` if it does not exis
 
 ## Fonts and sizes
 
-Loaded from Google Fonts in `css/style.css`:
+Loaded from Google Fonts in `css/style.css` ([Zen Kaku Gothic Antique + Zen Kaku Gothic New](https://fontpair.co/playground/zen-kaku-gothic-antique-zen-kaku-gothic-new?color=FFCD70&icons=1)):
 
-- **Source Sans 3** — body text (weights 400, 600, 700; italic 400)
-- **Cousine** — the MISHA LUNIA name (weights 400, 700; italic 400)
+- **Zen Kaku Gothic Antique** — name, headings, product names
+- **Zen Kaku Gothic New** — body text, nav, prices, buttons (weights 400, 500, 700)
 
-Fallbacks: Avenir Next, Avenir, Helvetica, Arial, sans-serif. The name also falls back to Courier New.
+Fallbacks: Avenir Next, Avenir, Helvetica, Arial, sans-serif.
+
+The name is stacked: MISHA / LUNIA.
 
 | Size | Where |
 | --- | --- |
@@ -47,8 +49,11 @@ Fallbacks: Avenir Next, Avenir, Helvetica, Arial, sans-serif. The name also fall
 | 16px | ← shop / ← art gallery, About section headings, shop card prices |
 | 18px | Cart panel title, name in the mobile header |
 | 20px | Product page price |
-| 22px | Shop heading, shop product names, work page titles (Vessels, Teapot) |
+| 22px | Shop product names, work page titles (Vessels, Teapot) |
 | 24px | Product page title (Cups/Mugs) |
+| 26px | Shop heading |
 | 30px | Name in the desktop sidebar |
 
-Default weight is 400. About CV years use 600. Line height for body copy is 1.5. The name uses letter-spacing -0.5px.
+Default weight is 400. About CV years use 600. Line height for body copy is 1.5. The name uses letter-spacing -0.5px and line-height 1.05.
+
+Page background is `#fffff8`. Link hover is `#ffcd70`.

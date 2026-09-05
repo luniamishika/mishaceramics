@@ -68,12 +68,12 @@ def work_page(title: str, filename: str, alt: str) -> str:
 <body class="content work">
   <div class="site">
     <aside class="mobile-bar">
-      <a href="../index.html" class="logo">MISHA LUNIA</a>
+      <a href="../index.html" class="logo">MISHA<br />LUNIA</a>
       <button class="hamburger" aria-label="Menu"><span></span></button>
     </aside>
     <button type="button" class="cart-btn" aria-label="Cart">{CART_SVG}</button>
     <header class="nav-wrapper">
-      <a href="../index.html" class="logo">MISHA LUNIA</a>
+      <a href="../index.html" class="logo">MISHA<br />LUNIA</a>
       <nav id="menu">
         <ul>
         <li class="item selected"><a href="../index.html">art gallery</a></li>
