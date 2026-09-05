@@ -100,7 +100,7 @@ def work_page(title: str, filename: str, alt: str) -> str:
           </div>
         </div>
         <div class="work-process">
-          <h2>Process Images</h2>
+          <h2>PROCESS IMAGES</h2>
           <div class="work-more">
           <span class="black" style="aspect-ratio: 1 / 1"></span>
           <span class="black" style="aspect-ratio: 1 / 1"></span>

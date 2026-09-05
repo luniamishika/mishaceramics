@@ -39,14 +39,15 @@ Loaded from Google Fonts in `css/style.css` ([Zen Kaku Gothic Antique + Zen Kaku
 
 Fallbacks: Avenir Next, Avenir, Helvetica, Arial, sans-serif.
 
-The name is stacked: MISHA / LUNIA.
+The name is stacked on desktop (MISHA / LUNIA) and one line on mobile.
 
 | Size | Where |
 | --- | --- |
 | 12px | Gallery “coming soon” labels |
 | 13px | Shop “out of stock”, cart empty text, toast |
 | 14px | Body copy, nav links, Add to Cart |
-| 16px | ← shop / ← art gallery, About section headings, shop card prices |
+| 15px | ← shop / ← art gallery |
+| 16px | About section headings, shop card prices |
 | 18px | Cart panel title, name in the mobile header |
 | 20px | Product page price |
 | 22px | Shop product names, work page titles (Vessels, Teapot) |
@@ -54,6 +55,6 @@ The name is stacked: MISHA / LUNIA.
 | 26px | Shop heading |
 | 30px | Name in the desktop sidebar |
 
-Default weight is 400. About CV years use 600. Line height for body copy is 1.5. The name uses letter-spacing -0.5px and line-height 1.05.
+Default weight is 400. About CV years use 600. Line height for body copy is 1.5.
 
-Page background is `#fffff8`. Link hover is `#a07834`.
+Page background is `#fffff8`. Link hover is `#6f3f35`.
