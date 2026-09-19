@@ -191,11 +191,13 @@ body.gallery #content {
 
 .masonry {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .asset {
-  width: 33.333%;
-  float: left;
+  width: auto;
+  min-width: 0;
   padding: 0 5% 5% 0;
   display: block;
   cursor: default;
@@ -208,9 +210,7 @@ body.gallery #content {
 }
 
 .masonry::after {
-  content: "";
-  display: table;
-  clear: both;
+  content: none;
 }
 
 .asset img {
@@ -898,10 +898,13 @@ body.product .back-link {
     padding: 12px 12px 48px;
   }
 
+  .masonry {
+    display: block;
+  }
+
   .asset {
     width: 100%;
     padding: 0 0 16px;
-    float: none;
   }
 
   .about-hero,
